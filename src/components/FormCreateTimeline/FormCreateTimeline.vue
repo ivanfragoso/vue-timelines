@@ -60,7 +60,7 @@
 <script>
 import dayjs from "dayjs";
 
-import * as localizedFormat from "dayjs/plugin/localizedFormat";
+var localizedFormat = require("dayjs/plugin/localizedFormat");
 
 import eventBus from "../eventBus.js";
 

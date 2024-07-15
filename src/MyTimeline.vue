@@ -93,14 +93,14 @@ import { $vfm, VueFinalModal, ModalsContainer } from "vue-final-modal";
 
 /* eslint-disable vue/no-unused-components */
 
-import { reactive } from "vue";
+
 import { mapState, mapMutations, mapGetters } from "vuex";
 import { TimelineHeader } from "@/components";
-import { TaskDataPanel } from "@/components";
-import { TextEdit } from "@/components";
-import { List, ListHeader, ListRow } from "@/components";
+import { TaskDataPanel } from "@/components/TaskDataPanel/";
+import { TextEdit } from "@/components/TextEdit/";
+import { List, ListHeader, ListRow } from "@/components/List/";
 
-import { Timeline, TimelineRow, TimelineItem } from "@/components";
+import { Timeline, TimelineRow, TimelineItem } from "@/components/Timeline/";
 import { cellSize } from "@/contexts/CellSizeContext";
 import { orderTasks, setPriorityTasks } from "@/utils/tasks";
 import { initDay } from "@/utils/date";

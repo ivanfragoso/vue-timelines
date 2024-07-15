@@ -46,7 +46,8 @@
 
 <script>
 import dayjs from "dayjs";
-import * as isSameOrAfter from "dayjs/plugin/isSameOrAfter";
+
+var isSameOrAfter = require("dayjs/plugin/isSameOrAfter")
 
 dayjs.extend(isSameOrAfter);
 

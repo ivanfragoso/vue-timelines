@@ -135,7 +135,7 @@
 import dayjs from "dayjs";
 import vue3slider from "vue3-slider";
 
-import * as localizedFormat from "dayjs/plugin/localizedFormat";
+var localizedFormat = require("dayjs/plugin/localizedFormat");
 
 import eventBus from "../eventBus.js";
 
