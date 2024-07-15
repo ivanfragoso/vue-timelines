@@ -12,7 +12,7 @@ const projectRootDir = path.resolve(__dirname);
 
 export default {
   input: "src/index.js",
-  external: ["vue", "dayjs", "@vuepic/vue-datepicker"],
+  external: ["vue", "dayjs", "vue3-slider", "@vuepic/vue-datepicker"],
   output: {
     name: "MyTimeline",
     exports: "named",
@@ -57,6 +57,6 @@ export default {
       objectAssign: "Object.assign",
       transforms: {  generator: false, forOf: false, asyncAwait: false  },
     }),
-    terser({ output: { ecma: 5 } }),
+    // terser({ output: { ecma: 5 } }),
   ],
 };
