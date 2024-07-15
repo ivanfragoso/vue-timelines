@@ -1,6 +1,8 @@
 import * as TimelineComponets from "./components/Timeline";
 import * as ListComponents from "./components/List";
-import MyGraph from "./MyGraphs";
+import MyGraphs from "./MyGraphs";
+import store from "./store/store"
+import Vuex from 'vuex'
 
 const install = (Vue) => {
   if (install.installed) return;
@@ -22,8 +24,11 @@ const install = (Vue) => {
     }
   }
 
-  Vue.component(MyGraph.name, MyGraph);
-  MyGraph.install = install;
+  Vue.component(MyGraphs.name, MyGraphs)
+  MyGraphs.install = install
+
+  Vue.use(Vuex)
+  Vue.prototype.$store = store
 };
 
 const plugin = {
