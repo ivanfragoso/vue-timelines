@@ -57,6 +57,6 @@ export default {
       objectAssign: "Object.assign",
       transforms: {  generator: false, forOf: false, asyncAwait: false  },
     }),
-    // terser({ output: { ecma: 5 } }),
+    terser({ output: { ecma: 5 } }),
   ],
 };
